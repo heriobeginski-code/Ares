@@ -1,13 +1,9 @@
-html<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Mission Control - Life OS</title><link rel="icon" type="image/png" href="your-image-path.jpg">
-<link rel="apple-touch-icon" href="icon.png">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Mission Control - Life OS</title>
     <style>
         * {
             margin: 0;
@@ -1097,23 +1093,4 @@ html<!DOCTYPE html>
             document.getElementById('greetingText').textContent = `${greeting}, User`;
         }
 
-        // Setup Event Listeners
-        function setupEventListeners() {
-            // Escape key to close views
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    if (document.getElementById('appIframeView').classList.contains('active')) {
-                        document.getElementById('doneButton').click();
-                    } else if (document.getElementById('activationView').classList.contains('active')) {
-                        document.getElementById('closeActivation').click();
-                    }
-                }
-            });
-        }
-
-        // Make functions global for inline handlers
-        window.saveAppUrl = saveAppUrl;
-        window.resetApp = resetApp;
-    </script>
-</body>
-</html>
+        // Setup
